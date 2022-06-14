@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/*================================================================
+공통css
+================================================================*/
+* {
+  max-width: 2870px;
+  color: #082B48;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* img {
+  width: 50%;
+  height: auto;
+}
+
+* a {
+  text-decoration: none;
+  color: #082B48;
+  cursor: pointer;
+}
+
+* a:hover {
+  opacity: 0.7;
+}
+
+* ul {
+  list-style: none;
+}
+
+/*================== container  ==================*/
+.container {
+  max-width: 1960px;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+/*================== header  ==================*/
+header {
+  height: 150px;
+  /* --- 텍스트 입력란 --- */
+  /* --- 버튼 --- */
+  /* --- 아이콘 --- */
+}
+
+header .child {
+  display: none;
+}
+
+header .header-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 0 30px 0;
+}
+
+header .searchArea {
+  padding-top: 10px;
+  width: auto;
+  height: 50px;
+  margin: auto;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  line-height: 0;
+}
+
+header .searchArea .searchText {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  height: 50px;
+  width: 400px;
+  margin: 0;
+  padding: 0 12px;
+  border: 2px solid #d6d6d6;
+  border-radius: 50px 0 0 50px;
+  color: #bebebe;
+  outline: 0;
+  font-size: 12px;
+}
+
+header .searchArea .searchButton {
+  float: left;
+  box-sizing: border-box;
+  height: 50px;
+  margin: 0;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background: #d6d6d6;
+  color: #fff;
+  cursor: pointer;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+header .searchArea .searchImg {
+  display: inline-block;
+  width: auto;
+  height: 12px;
+  margin: 0 3px 0 0;
+  vertical-align: middle;
+}
+
+header .searchArea .searchText::-ms-clear {
+  display: none;
+}
+
+header .header-list-item {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .header-list-item .icon {
+  font-size: 20px;
+  color: #7bce23;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e5e5e5;
+  text-align: center;
+  line-height: 50px;
+}
+
+header .header-list-item li {
+  margin-right: 25px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.top {
+  background: linear-gradient(to left, #95f62c, #7bce23);
+  height: 70px;
+}
+
+.top .top-list-item {
+  text-align: center;
+  padding-top: 18px;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  background-color: #e5e5e5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height:auto;
+}
+
+.main .main-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main h2 {
+  font-size: 20px;
+}
+
+.main .slide {
+  padding-top: 30px;
+}
+
+.main .main-item-left {
+  border-radius: 20px;
+  background-color: white;
+  width: 75%;
+  margin-right: 30px;
+  padding: 30px;
+}
+
+.main .main-item-left img {
+  padding: 10px;
+}
+
+.main .main-item-right {
+  border-radius: 20px;
+  background-color: white;
+  width: 25%;
+  padding: 30px;
+}
+
+.main .main-item-right .rank-list {
+  padding: 10px 0 10px 0;
+}
+
+.main .main-item-right .rank-list .rank-list-li {
+  padding: 10px;
+}
+
+.main .main-item-right .rank-list .rank-list-li img {
+  width: 60px;
+  height: 60px;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text p {
+  line-height: 60px;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text .rank1 {
+  color: gold;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text .rank2 {
+  color: silver;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text .rank3 {
+  color: brown;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text img {
+  border-radius: 10px;
+}
+
+.main .main-item-right .rank-list .rank-list-li .rank-image-and-text .recipe-name {
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  height: 40px;
+}
+
+footer p {
+  text-align: center;
+  color: #acacac;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.myRecipe {
+  height: 700px;
+  padding: 30px;
+  padding-top: 30px;
+  background-color: #ebebeb;
+}
+
+.myRecipe h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: #848484;
+}
+
+.myRecipe .recipe {
+  padding-top: 30px;
+  display: flex;
+}
+
+.myRecipe .recipe .myRecipe-list {
+  border-radius: 10px;
+  width: 20%;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.myRecipe .recipe .myRecipe-list .myRecipe-list-item {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.myRecipe .recipe .myRecipe-list h2 {
+  font-size: 20px;
+}
+
+.myRecipe .recipe .myRecipe-list p {
+  color: #acacac;
+  padding-bottom: 10px;
+}
+
+.myRecipe .recipe .myRecipe-list img {
+  width: 100%;
+  height: 150px;
+}
+
+.myRecipe .recipe .myRecipe-list:hover {
+  opacity: 0.6;
+}
+
+.myRecipe .recipe .recipeComment {
+  color: #000;
+}
+
+/* ===================== 작성한 댓글   ======================*/
+
+.my-comment {
+  margin-top: 30px;
+}
+
+.my-comment-list {
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  width: auto;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.my-comment-list .recipeName {
+  font-size: 20px;
+}
+
+.my-comment-list .my-comment-list-item {
+  padding-left: 20px;
+}
+
+.my-comment-list img {
+  width: 100px;
+  height: 100px;
+}
+
+.my-comment-list .recipeComment {
+  color: #868686;
+}
+
+.my-comment-list .comment-data {
+  color: #baf878;
+}
